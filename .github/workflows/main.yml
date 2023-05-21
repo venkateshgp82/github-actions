@@ -1,0 +1,12 @@
+name: learn-github-actions
+run-name: ${{ github.actor }} is learning GitHub Actions
+on:
+  push:
+    branches:
+      - main
+jobs:
+  print_hello:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Github actions at work"
+    
